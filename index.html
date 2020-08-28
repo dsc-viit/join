@@ -12,38 +12,17 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Register</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        .body {
+            background-color: aliceblue;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
-<body style="background-color: aliceblue;width: 100%;height: 100%;">
-    <section class="container shadow-lg p-3 mb-5 bg-white rounded"
-        style="z-index: 5;padding-bottom:10%;margin-top: 10vh;height:80vh;width:80vw;background-color: white;">
-        <img src="images/gd_dsc_lockup_horizontal_color.svg" style="width:40%; margin-left:40px;margin-top:40px;">
-        <h1 style="margin-left:40px; font-weight: bold;font-style: normal;font-family:'Barlow',sans-serif;"></br>Core
-            Team
-            Recruitments</h1>
-        <h1 style="margin-left:40px; font-weight: bold;font-style: normal;font-family:'Barlow',sans-serif;color:grey;">
-            2020-2021
-        </h1>
-        <div style="position:absolute;top:34vh;left:50vw;">
-            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_UWktQI.json" background="transparent"
-                speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
-        </div>
-        <span
-            style="font-style: oblique;font: size 30px;; position:absolute;top:80vh;left:20vw;font-family:'Barlow',sans-serif;color:grey;">“It
-            is never too late to be what you might have been.”</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–
-            <strong style="color: black;">George
-                Eliot</strong></span>
-        <p
-            style="font-style:normal;font-weight: 700; position:absolute;top:55vh;left:20vw;font-family:'Barlow',sans-serif;color:black;">
-            Be a Part of Core Team.</p>
-        <button style="font-weight:700;position: absolute;top:54vh;left:32vw;" type="button"
-            class="btn btn-primary">Register</button>
-    </section>
-
-    <section class="container shadow-lg p-3 mb-5 bg-white rounded"
-        style="z-index: 5; margin-top: 10vh;height:1000px;width:80vw;background-color: white;">
-    </section>
+<body>
+    <!-- background -->
     <div style="z-index: -1; position:fixed; top:0;left:0;width:15%;height:auto;">
         <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_WdTEui.json" mode="bounce"
             background="transparent" speed="1" loop autoplay></lottie-player>
@@ -85,6 +64,64 @@
 
 
 
+    <!-- first page -->
+    <section class="container shadow-lg p-3 mb-5 bg-white rounded"
+        style="z-index: 5;padding-bottom:10%;margin-top: 10vh;height:80vh;width:80vw;background-color: white;">
+        <div class="row">
+            <div class="col">
+                <img style="margin-top:10%;margin-left:5%;width:100%;" src="images/gd_dsc_lockup_horizontal_color.svg">
+            </div>
+            <div class="col" style="width: 40%;">
+
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <div style="margin-top:0;margin-left:5%;">
+                    <h1 style="font-weight: bold;font-style: normal;font-family:'Barlow',sans-serif;">
+                        </br>Core
+                        Team
+                        Recruitments</h1>
+                    <h1 style="font-weight: bold;font-style: normal;font-family:'Barlow',sans-serif;color:grey;">
+                        2020-2021
+                    </h1>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="margin-top:0;margin-left:5%;">
+                <p style="padding-top:10%;color: red;font-family:'Barlow',sans-serif;" id="demo"></p>
+                <p style="font-style:normal;font-weight: 700; font-family:'Barlow',sans-serif;color:black;">
+                    Be a Part of Core Team.</p>
+                <button style="font-weight:700;" type="button" class="btn btn-primary">Register</button>
+                <p
+                    style="padding-top:10%;font-style: oblique;font-size: medium;font-family:'Barlow',sans-serif;color:grey;">
+                    “It
+                    is never too late to be what you might have been.”</br>
+                    <strong style="color: black;">George
+                        Eliot</strong></p>
+            </div>
+            <div class="col">
+                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_UWktQI.json"
+                    background="transparent" speed="1" style="min-width:300px;max-width: 600px; height:auto;" loop
+                    autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <!-- second page -->
+    <div style="position:static;margin-left:10vw;margin-top:10vh;">
+        <img style="width:80vw;" src="images/what is a team.png">
+    </div>
+
+    <!-- third page -->
+    <!-- <section class="container shadow-lg p-3 mb-5 rounded"
+        style="z-index: 5;padding-bottom:10%;margin-top: 10vh;height:80vh;width:80vw;background-color: white;">
+    </section> -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -95,6 +132,21 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            var i = 0;
+            var txt = 'Registrations are open!'; /* The text */
+            var speed = 50; /* The speed/duration of the effect in milliseconds */
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter();
+        });
     </script>
 </body>
 
