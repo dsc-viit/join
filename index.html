@@ -12,23 +12,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Register</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <style>
-        html {
-            overflow-x: hidden;
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
-        }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-
-        body {
-            background-color: aliceblue;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -130,36 +114,103 @@
     </div>
 
     <!-- third page -->
-    <!-- <section class="container shadow-lg p-3 mb-5 rounded"
-        style="z-index: 5;padding-bottom:10%;margin-top: 10vh;height:80vh;width:80vw;background-color: white;">
-    </section> -->
+    <section class="container" style="z-index:-1;margin-top: 10vh;height:auto;width:80vw;">
+        <div style=" text-align: center;
+        position: relative;
+        margin: 50px auto;">
+            <span class="top right"></span>
+            <span class="top left"></span>
+            <h2> Events </h2>
+            <span class="bottom right"></span>
+            <span class="bottom left"></span>
+        </div>
+        <div class="gallery" id="gallery">
+            <img src="" alt="" width="100%" height="auto" class="gallery-img" />
+            <img src="" alt="" width="100%" height="auto" class="gallery-img" />
+            <img src="" alt="" width="100%" height="auto" class="gallery-img" />
+            <img src="" alt="" width="100%" height="auto" class="gallery-img" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <script>
-        $(document).ready(function () {
-            var i = 0;
-            var txt = 'Registrations are open!'; /* The text */
-            var speed = 50; /* The speed/duration of the effect in milliseconds */
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("demo").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
-                }
-            }
-            typeWriter();
-        });
-    </script>
+        </div>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Join DSCVIIT -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <img src="https://assets.website-files.com/5bff8886c3964a992e90d465/5c00621b7aefa4f9ee0f4303_wide-shot.svg"
+                                    style="min-width:30vw;max-width:70vw;" alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title">APPLY FOR DSC MEMBERSHIP</h5>
+                                <p class="card-text text-left">DSC Members will be trained by the Core Team/faculties
+                                    and
+                                    newly gained
+                                    skills will be applied by them in project based learning.
+                                    </br>
+                                    Developer Student Club membership comes with no costs, but it does have a selection
+                                    process
+                                    based on your interest in Developer technologies.</p>
+                                <a href="#" class="btn btn-primary">I want to join</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_dfbnBf.json"
+                                    background="transparent" speed="1" style="min-width:44vw;max-width:400px;" loop
+                                    autoplay>
+                                </lottie-player>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title">APPLY FOR THE CORE TEAM</h5>
+                                <p class="card-text text-left">Technical core members receive resources
+                                    from Google Developers to train students in their colleges.</br>
+                                    Non-technical core members take care of the non-technical related work for
+                                    conducting
+                                    events.
+                                    Start your leadership journey now!
+                                </p>
+                                <a href="#" class="btn btn-primary">I want to join</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+            integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <script src="main.js">
+            console.log('js not linked');
+        </script>
 </body>
 
 </html>
