@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
         $("#myModal").modal();
     });
-    $.getJSON('image.json', function (data) {
+    $.getJSON('https://raw.githubusercontent.com/dsc-viit/JSON-HUB/master/image.json', function (data) {
         var pre = '<img src="';
         var pos = '"alt="" width="100%" height="auto" class="gallery-img" />';
         var str = '';
