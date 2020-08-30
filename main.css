@@ -234,6 +234,10 @@ span.right {
 }
 
 .at-column {
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
     z-index: 0;
     position: relative;
     background: #FFF;
