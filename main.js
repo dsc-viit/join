@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     $.getJSON('https://raw.githubusercontent.com/dsc-viit/JSON-HUB/master/image.json', function (data) {
         var pre = '<img src="';
-        var pos = '"alt="" width="100%" height="auto" class="gallery-img" />';
+        var pos = '"alt="" width="100%" height="auto" class="gallery-img" loading="lazy" />';
         var str = '';
         for (var image in data["image"]) {
             str += pre + data["image"][image] + pos;
