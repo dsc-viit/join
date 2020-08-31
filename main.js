@@ -10,10 +10,9 @@ $(document).ready(function () {
         }
     }
     typeWriter();
-
     $.getJSON('https://raw.githubusercontent.com/dsc-viit/JSON-HUB/master/image.json', function (data) {
         var pre = '<img src="';
-        var pos = '"alt="" width="100%" height="auto" class="gallery-img" loading="lazy" />';
+        var pos = '"alt="" width="100%" height="auto" class="gallery-img" />';
         var str = '';
         for (var image in data["image"]) {
             str += pre + data["image"][image] + pos;
@@ -23,7 +22,9 @@ $(document).ready(function () {
         $('<img>').ready(function () {
             console.log('Here you go guys');
         });
-        console.log(str);
+        // console.log(str);
+        delete(str);
+        delete(data);
     }).then(function () {
         $(".gallery-img").click(function () {
             var t = $(this).attr("src");

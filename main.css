@@ -14,6 +14,10 @@ html {
 }
 
 body {
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: aliceblue;
     text-align: center;
     padding: 10px;
@@ -27,7 +31,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-} 
+}
 
 .fancy-heading {
     margin-top: 50px;
@@ -402,11 +406,6 @@ span.right {
 
 .at-social__item svg:hover {
     fill: #788D96;
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
