@@ -17,6 +17,7 @@
     <title>Register</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
@@ -528,6 +529,12 @@
     </script>
     <script src="main.js">
         console.log('js not linked');
+    </script>
+    <script type="text/javascript">
+        $(document).bind("contextmenu", function (e) {
+            console.log('Hmm Got me with ctrl+shift+i.your a developer for sure');
+            return false;
+        });
     </script>
 </body>
 
