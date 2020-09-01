@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $(window).bind('resize', function (e) {
         if (window.RT) clearTimeout(window.RT);
         window.RT = setTimeout(function () {
@@ -16,6 +17,11 @@ $(document).ready(function () {
         }
     }
     typeWriter();
+    console.log($(window).width());
+    if ($(window).width() < 454) {
+        var elem = document.querySelector('#abc');
+        elem.removeAttribute("style");
+    }
     $.getJSON('https://raw.githubusercontent.com/dsc-viit/JSON-HUB/master/image.json', function (data) {
         var pre = '<img src="';
         var pos = '"alt="" width="100%" height="auto" class="gallery-img" />';
