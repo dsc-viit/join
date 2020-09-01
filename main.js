@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $(window).bind('resize', function (e) {
+        if (window.RT) clearTimeout(window.RT);
+        window.RT = setTimeout(function () {
+            this.location.reload(false); /* false to get page from cache */
+        }, 100);
+    });
     var i = 0;
     var txt = 'Registrations are open!'; /* The text */
     var speed = 50; /* The speed/duration of the effect in milliseconds */
