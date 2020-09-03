@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-    $(window).bind('resize', function (e) {
-        if (window.RT) clearTimeout(window.RT);
-        window.RT = setTimeout(function () {
-            this.location.reload(false); /* false to get page from cache */
-        }, 100);
-    });
+    // $(window).bind('resize', function (e) {
+    //     if (window.RT) clearTimeout(window.RT);
+    //     window.RT = setTimeout(function () {
+    //         this.location.reload(false); /* false to get page from cache */
+    //     }, 100);
+    // });
     var i = 0;
     var txt = 'Registrations are open!'; /* The text */
     var speed = 50; /* The speed/duration of the effect in milliseconds */
@@ -17,7 +17,7 @@ $(document).ready(function () {
         }
     }
     typeWriter();
-    console.log($(window).width());
+    // console.log($(window).width());
     if ($(window).width() < 454) {
         var elem = document.querySelector('#abc');
         elem.removeAttribute("style");
@@ -32,7 +32,7 @@ $(document).ready(function () {
         $('#gallery').append(str);
 
         $('<img>').ready(function () {
-            console.log('Here you go guys');
+            // console.log('Here you go guys');
         });
         // console.log(str);
         delete(str);
